@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+<title>Create New Plot- AgMap</title>
+
+{% endblock %}
+
+{% block body %}
+
+<div class='basicdesign'>
+  <h1>New Plot</h1>
+  <form method="post" class="text-cat">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" name="button">Submit</button>
+  </form>
+</div>
+{% endblock %}

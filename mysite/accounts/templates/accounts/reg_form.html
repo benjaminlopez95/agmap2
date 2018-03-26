@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+
+
+{% block head %}
+
+
+<title>Registration - AgMap</title>
+
+
+
+{% endblock %}
+
+
+
+
+
+{% block body %}
+
+
+
+    <div class='basicdesign'>
+        <h1>Registration</h1>
+        <br>
+      <form method="post" class="text-cat">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button>create account</button>
+      </form>
+
+      </div>
+
+
+{% endblock %}

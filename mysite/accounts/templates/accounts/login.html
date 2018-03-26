@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Login - AgMap</title>
+
+{% endblock %}
+
+{% block body %}
+
+    <div class='login-page'>
+      <div class="log-form">
+
+      <img src="https://i.imgur.com/KP586DG.png" alt="" class="login-logo">
+
+      <form class="login-form" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button>login</button>
+        <p class="message">Not registered? <a href="/account/register">Create an account.</a></p>
+        <p class="message">Forgot your password? <a href="/account/reset-password">Reset it.</a></p>
+      </form>
+
+      </div>
+    </div>
+
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

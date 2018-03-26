@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Account Management - AgMap</title>
+
+{% endblock %}
+
+{% block body %}
+<div class='basicdesign'>
+    <h1>Account Management</h1>
+    <br>
+  <div class="row">
+    <div class="column">  <span class="text-cat">Username: </span> <span class="text-ans">{{ user }} </span>
+      <br>
+      <span class="text-cat">First Name: </span>   <span class="text-ans">{{ user.first_name }} </span>
+      <br>
+      <span class="text-cat">Last Name:  </span>   <span class="text-ans">{{ user.last_name }} </span>
+      <br>
+      <span class="text-cat">Organization: </span>   <span class="text-ans">{{ user.userprofile.organization }} </span>
+      <br>
+      <span class="text-cat">City: </span>   <span class="text-ans">{{ user.userprofile.city }} </span>
+      <br>
+      <span class="text-cat">Email:   </span>  <span class="text-ans">{{ user.email }} </span>
+      <br>
+      <span class="text-cat">Website: </span>   <span class="text-ans">{{ user.userprofile.website }} </span>
+      <br>
+      <span class="text-cat">Password:   </span> <span class="text-ans">********</span>
+      <br>
+      <br>
+      <a href="edit">Edit Account</a> | <a href="/account/change-password">Change your password.</a></div>
+        <div class="column">
+      <img src="{{ user.userprofile.image.url }}" width="240px">
+      </div>
+      </div>
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Edit Profile - AgMap</title>
+
+{% endblock %}
+
+{% block body %}
+
+
+    <div class='basicdesign'>
+      <h1>Change Account Information</h1>
+
+      <form method="post" class="text-cat">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button>save changes</button>
+      </form>
+
+
+
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Fields List - AgMap</title>
+
+{% endblock %}
+
+{% block body %}
+
+
+    <div class='basicdesign'>
+      {% if agfield_list %}
+      <ul>
+        {% for Field in agfield_list %}
+        <li><a href="{{% field.get_absolute_url %}}">{{ field.lot }}</a> {{ field.ranch }}
+        </li>
+        {% endfor %}
+      </ul>
+
+      {% else %}
+      <p>There are no fields available.</p>
+
+      {% endif %}
+
+
+    </div>
+
+
+{% endblock %}

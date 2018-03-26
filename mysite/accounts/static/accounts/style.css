@@ -1,0 +1,281 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
+
+}
+.log-form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+.login-logo {
+  max-height: 70px;
+  margin-bottom: 15px;
+}
+.log-form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.log-form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #fab801;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.log-form button:hover,.log-form button:active,.log-form button:focus {
+  background: #c99503;
+}
+.log-form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.log-form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+
+.form {
+  width: 70%;
+  background: #FFFFFF;
+  margin: 0 auto;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.basicdesign {
+  width: 70%;
+  height: 100%;
+  background: #FFFFFF;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 45px;
+  text-align: left;
+  flex: 1;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#dfooter {
+  clear: both;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ffbb00;
+}
+
+.form h1 {
+  font-weight: bold;
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 30%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #fab801;
+  max-width: 25%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+
+.form button:hover,.form button:active,.form button:focus {
+  background: #c99503;
+}
+
+.basicdesign button {
+  font-family: "Roboto", sans-serif;
+  text-transbasicdesign: uppercase;
+  outline: 0;
+  background: #fab801;
+  max-width: 25%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+
+.basicdesign button:hover,.basicdesign button:active,.basicdesign button:focus {
+  background: #c99503;
+}
+
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.text-muted2 {
+  font-size: 10pt;
+  margin-left: 15px;
+  color: #000000;
+}
+
+.text-cat {
+  font-size: 15pt;
+  margin-left: 10px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
+
+
+.navbar-nav {
+  margin-right: 10px;
+  color: white;
+}
+
+
+.basicdesign button {
+  font-family: "Roboto", sans-serif;
+  text-transbasicdesign: uppercase;
+  outline: 0;
+  background: #fab801;
+  max-width: 25%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+
+.basicdesign button:hover,.basicdesign button:active,.basicdesign button:focus {
+  background: #c99503;
+}
+
+
+body {
+  background: url(https://i.imgur.com/UWJy1yz.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.leaflet-container {  /* all maps */
+    width:  800px;
+    height: 500px;
+}
+
+#specialbigmap {
+    height: 800px;
+}
